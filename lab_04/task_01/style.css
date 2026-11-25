@@ -1,0 +1,70 @@
+body {
+    margin: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.mouse-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background-color: #f4f7fa;
+}
+
+.mouse-image {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.mouse-name {
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mouse-specs {
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.mouse-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+    flex: 1;
+    padding: 8px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #245a81;
+}
+
+.edit-button:hover {
+    background-color: #163b56;
+}
+
+.delete-button {
+    background-color: #b62d45;
+}
+
+.delete-button:hover {
+    background-color: #852034;
+}

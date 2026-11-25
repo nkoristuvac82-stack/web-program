@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 24px; font: 16px/1.45 Arial, sans-serif; color: #17212a; }
+h1 { margin: 0 0 20px; line-height: 1.15; }
+img { max-width: 100%; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px solid #007d95; outline-offset: 3px; }
+.tree { overflow-x: auto; }
+.tree img { display: block; max-width: none; }
+.portrait { width: 240px; height: 240px; object-fit: cover; border-radius: 12px; }
