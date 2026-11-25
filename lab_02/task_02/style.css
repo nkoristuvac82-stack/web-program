@@ -1,0 +1,28 @@
+body {
+    margin: 24px;
+    font: 21px/1.45 Arial, sans-serif;
+}
+
+.seasons {
+    list-style-image: url("img/season.png");
+}
+
+.seasons ul {
+    margin-left: 10px;
+}
+
+.winter {
+    list-style-image: url("img/winter.png");
+}
+
+.spring {
+    list-style-image: url("img/spring.png");
+}
+
+.summer {
+    list-style-image: url("img/summer.png");
+}
+
+.autumn {
+    list-style-image: url("img/autumn.png");
+}

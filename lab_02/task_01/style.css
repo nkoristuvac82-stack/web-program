@@ -1,0 +1,27 @@
+body {
+    margin: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.fruits {
+    max-width: 400px;
+    padding: 30px 20px;
+    background-color: #ef9caf;
+    color: white;
+}
+
+.fruits li {
+    list-style-position: inside;
+    background-color: #c46074;
+    padding-left: 10px;
+}
+
+.fruits li + li {
+    margin-top: 10px;
+}
+
+.fruits span {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #9e3048;
+}

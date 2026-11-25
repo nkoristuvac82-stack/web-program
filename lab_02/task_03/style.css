@@ -1,0 +1,42 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.todo {
+    max-width: 420px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todo li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 28px;
+    background-color: #a4cbd9;
+}
+
+.todo li:nth-child(even) {
+    background-color: #acd7e3;
+}
+
+.todo li.done {
+    background-color: #e1e1e1;
+}
+
+.mark {
+    width: 22px;
+    flex-shrink: 0;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.done .task {
+    text-decoration: line-through;
+}
+
+.cross {
+    color: #c00000;
+}
