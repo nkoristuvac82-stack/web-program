@@ -1,0 +1,40 @@
+body {
+    margin: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.schedule {
+    border: 2px solid #344052;
+    border-collapse: collapse;
+}
+
+.schedule caption {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.schedule th,
+.schedule td {
+    border: 1px solid #657487;
+    padding: 4px 10px;
+    text-align: center;
+}
+
+.schedule thead {
+    background-color: #e1edd8;
+}
+
+.schedule tbody th {
+    background-color: #e8edf7;
+}
+
+.schedule .day {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.schedule .subject {
+    text-align: left;
+}

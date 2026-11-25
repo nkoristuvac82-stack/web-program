@@ -1,0 +1,55 @@
+body {
+    margin: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.messages {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+}
+
+.messages th,
+.messages td {
+    padding: 12px 16px;
+}
+
+.messages thead {
+    background-color: #3977ab;
+    color: white;
+}
+
+.messages tbody tr {
+    background-color: #f8fbff;
+}
+
+.messages tbody tr:nth-child(even) {
+    background-color: #d3e4f4;
+}
+
+.messages tbody tr:hover {
+    background-color: #a9cbed;
+}
+
+.messages small {
+    display: block;
+    margin-top: 4px;
+    color: #4b5969;
+}
+
+.messages td:nth-last-child(-n + 2) {
+    text-align: center;
+}
+
+.size,
+.priority {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    background-color: #3977ab;
+    color: white;
+}
+
+.p1 { background-color: #b23932; }
+.p3 { background-color: #17742b; }
+.p5 { background-color: #122f66; }
