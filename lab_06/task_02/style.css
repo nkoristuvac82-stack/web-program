@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 24px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.doors {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: min(100%, 750px);
+    height: clamp(140px, 30vw, 250px);
+    margin: 36px auto;
+    perspective: 800px;
+    font-size: 28px;
+}
+
+.door {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    border: 6px solid #601044;
+    background-color: #842b60;
+}
+
+.door-left {
+    left: 0;
+    transform-origin: left center;
+}
+
+.door-right {
+    right: 0;
+    transform-origin: right center;
+}
+
+.doors:hover .door,
+.doors:focus-visible .door {
+    transition: transform 2s;
+}
+
+.doors:hover .door-left,
+.doors:focus-visible .door-left {
+    transform: rotateY(-65deg);
+}
+
+.doors:hover .door-right,
+.doors:focus-visible .door-right {
+    transform: rotateY(65deg);
+}

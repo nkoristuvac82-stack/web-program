@@ -1,0 +1,35 @@
+.spinner {
+    position: relative;
+    box-sizing: border-box;
+    width: 125px;
+    height: 125px;
+    margin: 50px auto;
+    border: 5px dashed #86c4fa;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-radius: 50%;
+    animation: spin 1.25s linear infinite;
+}
+
+.spinner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-right: 11px solid transparent;
+    border-bottom: 18px solid #369af0;
+    border-left: 11px solid transparent;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

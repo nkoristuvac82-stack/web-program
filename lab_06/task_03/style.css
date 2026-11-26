@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 32px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.plan {
+    position: relative;
+    padding: 16px 0 20px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 10px #0005;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.plan:hover,
+.plan:focus-within {
+    transform: scale(1.09);
+    z-index: 1;
+}
+
+.enterprise   { --accent: #bd3155; }
+.professional { --accent: #9a5d17; }
+.standard     { --accent: #255f7e; }
+.basic        { --accent: #477e21; }
+
+.plan h2 {
+    margin: 0;
+    padding: 10px 4px;
+    border-bottom: 4px solid var(--accent);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price {
+    margin: 14px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.price span {
+    display: block;
+    font-size: 15px;
+    color: #666;
+}
+
+.plan ul {
+    padding: 0 8px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.plan button {
+    padding: 10px 26px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--accent);
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .plans {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 460px) {
+    .plans {
+        grid-template-columns: 1fr;
+        max-width: 250px;
+    }
+}

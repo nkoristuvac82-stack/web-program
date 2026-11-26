@@ -1,0 +1,29 @@
+.track {
+    position: relative;
+    width: min(340px, 90vw);
+    height: 24px;
+    margin: 40px auto;
+    border: 2px solid #66adf6;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.runner {
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: #70b3f4;
+    animation: slide 1.5s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        left: -30%;
+    }
+
+    to {
+        left: 100%;
+    }
+}

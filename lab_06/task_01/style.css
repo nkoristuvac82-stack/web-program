@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.clock {
+    position: relative;
+    width: min(400px, 85vw);
+    aspect-ratio: 1;
+    margin: 40px auto;
+    border: 4px solid teal;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 0;
+    background-color: teal;
+    transform-origin: center bottom;
+    animation-name: rotate-hand;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.hour {
+    --start-angle: 145deg;
+    width: 8px;
+    height: 34%;
+    margin-left: -4px;
+    animation-duration: 720s;
+}
+
+.minute {
+    --start-angle: 15deg;
+    width: 4px;
+    height: 44%;
+    margin-left: -2px;
+    animation-duration: 12s;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: teal;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate-hand {
+    from {
+        transform: rotate(var(--start-angle));
+    }
+
+    to {
+        transform: rotate(calc(var(--start-angle) + 360deg));
+    }
+}
